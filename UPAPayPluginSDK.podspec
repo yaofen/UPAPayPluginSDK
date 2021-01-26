@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "UPAPayPluginSDK"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "银联Apple pay控件支付iOS SDK"
   s.description  = <<-DESC
     具体更新内容查看银联官方说明文档
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/yaofen/UPAPayPluginSDK.git", :tag => s.version.to_s }
 
   s.requires_arc = true
-  s.public_header_files = 'Headers/*.h'
+  s.source_files = 'Headers/*.h'
   s.ios.vendored_libraries = 'lib/libUPAPayPlugin.a'
 
   s.xcconfig = { "OTHER_LINK_FLAG" => '$(inherited) -ObjC' }
